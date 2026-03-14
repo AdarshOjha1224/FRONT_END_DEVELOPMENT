@@ -12,7 +12,7 @@
 const addTwo = (num1,num2) => (num1 + num2)
 console.log(addTwo(13, 17))
 
-const name = () => ({ username: "Adarsh" })
+const name = () => ({ username: "Adarsh" }) // parenthises creates a block.
 console.log(name())
 
 
