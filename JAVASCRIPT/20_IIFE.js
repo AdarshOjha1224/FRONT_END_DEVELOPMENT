@@ -18,6 +18,3 @@
 ( (name) => {  // Arrow function (unnamed IIFE)
     console.log(`DB CONNECTED THREE ${name}`)
 })("Adarsh")
-
-
-
