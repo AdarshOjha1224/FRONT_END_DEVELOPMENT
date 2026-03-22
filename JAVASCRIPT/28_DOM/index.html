@@ -19,6 +19,12 @@
         <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, veritatis.</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         <input type="password" name="" id="">
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
 </body>
 </html>
@@ -42,8 +48,6 @@ Query Selector ->>
 document.getElementsByClassName('heading')
 HTMLCollection [h1#title.heading, title: h1#title.heading]
 
-document.querySelector('input[type = "password"]')
-<input type=​"password" name id>​
 
 document.querySelector('h2')
 <h2>​Lorem ipsum dolor sit.​</h2>​
@@ -54,7 +58,32 @@ document.querySelector('#title')
 document.querySelector('.heading')
 <h1 id=​"title" class=​"heading">​"DOM learning on Chai aur code"<span style=​"display:​ none">​ Test Text​</span>​</h1>​
 
+document.querySelector('input[type = "password"]')
+<input type=​"password" name id>​
 
+document.querySelector('ul')
+<ul>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​</ul>​
+
+const myul = document.querySelector('ul')
+undefined
+
+myul.querySelector('li')
+<li>​::marker​"one"</li>​
+
+const turnGreen = myul.querySelector('li')
+undefined
+
+turnGreen.style.backgroundColor = "green"
+'green'
+
+turnGreen.style.padding = "10px"
+'10px'
+
+turnGreen.style.borderRadius = "15px"
+'15px'
+
+turnGreen.innerText = "Five"
+'Five'
 
 -->
 
@@ -130,9 +159,4 @@ title.style.borderRadius = "20px"
 title
 <h1 id=​"title" class=​"test heading" style=​"background-color:​ red;​ padding:​ 15px;​ border-radius:​ 20px;​">​DOM learning on Chai aur code​</h1>​
 
-
-
 -->
-
-
-
