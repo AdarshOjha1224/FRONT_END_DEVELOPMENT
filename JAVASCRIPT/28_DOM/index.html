@@ -18,6 +18,7 @@
         <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, veritatis.</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <input type="password" name="" id="">
     </div>
 </body>
 </html>
@@ -34,6 +35,24 @@ title.textContent -> shows all the content includes hidden Text
 
 title.innerHTML -> shows all the html 
 'DOM learning on Chai aur code<span style="display: none"> Test Text</span>' 
+
+
+Query Selector ->> 
+
+document.getElementsByClassName('heading')
+HTMLCollection [h1#title.heading, title: h1#title.heading]
+
+document.querySelector('input[type = "password"]')
+<input type=​"password" name id>​
+
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit.​</h2>​
+
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​"DOM learning on Chai aur code"<span style=​"display:​ none">​ Test Text​</span>​</h1>​
+
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​"DOM learning on Chai aur code"<span style=​"display:​ none">​ Test Text​</span>​</h1>​
 
 
 
@@ -110,6 +129,7 @@ title.style.borderRadius = "20px"
 
 title
 <h1 id=​"title" class=​"test heading" style=​"background-color:​ red;​ padding:​ 15px;​ border-radius:​ 20px;​">​DOM learning on Chai aur code​</h1>​
+
 
 
 -->
