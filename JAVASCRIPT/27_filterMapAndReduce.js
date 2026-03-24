@@ -129,6 +129,8 @@ newNumbers = myNumbers.forEach((values) => {
 console.log(13);
 console.log(newNumbers)
 
+
+
 // CHAINING ->>>> using miltiple function like a chain.
 // map -> it will perform Operation.
 // Filter -> it will work on true/false condition.
@@ -180,5 +182,3 @@ const shoppingCart = [
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 console.log(priceToPay);
-
-
