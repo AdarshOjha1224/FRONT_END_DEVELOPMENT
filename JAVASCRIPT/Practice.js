@@ -138,6 +138,66 @@
         }
     }
 
+    // ==========================================
+    // 14_Objects_3.js (Destructuring)
+    // 15_Function.js
+    // 16_Functions_ObjectsAndArray.js (Passing objects, Rest operator)
+    // ==========================================
+    function processStudentReport({ name, scores }, ...extraNotes) {
+        // 26_loops_in_Array&Objects.js (for...in loop for objects)
+        let total = 0;
+        let subjectsCount = 0;
+        
+        for (const subject in scores) {
+            // Coercing string scores back to numbers just in case
+            total += Number(scores[subject]); 
+            subjectsCount++;
+        }
+        
+        let avg = total / subjectsCount;
+        let gradeDesc = calculateGrade(avg);
+        
+        console.log(`Student: ${name} | Avg: ${avg.toFixed(2)} | Grade: ${gradeDesc}`);
+        if (extraNotes.length > 0) console.log(`Notes: ${extraNotes.join(", ")}`);
+    }
+
+    // ==========================================
+    // 25_Iterations.js (Standard Loops)
+    // 26_loops_in_Array&Objects.js (for...of)
+    // ==========================================
+    console.log("\n--- PROCESSING ALL STUDENTS (Standard & for...of) ---");
+    // Standard For Loop
+    for (let i = 0; i < 1; i++) {
+        console.log("Processing batch " + (i + 1) + "...");
+    }
+
+    // for...of loop for Arrays
+    for (const student of studentsData) {
+        // 24_truthy_and_falsy_Values.js checking if student is active
+        if (student.isActive) {
+            processStudentReport(student, "Active Member");
+        } else {
+            console.log(`Student: ${student.name} | Status: Inactive (Skipped)`);
+        }
+    }
     
+    // ==========================================
+    // 27_filterMapAndReduce.js
+    // ==========================================
+    console.log("\n--- ANALYTICS (Filter, Map, Reduce) ---");
+    
+    // 1. Filter out only the truthy/active students
+    const activeStudents = studentsData.filter(student => student.isActive);
+
+    // 2. Map to extract just their names
+    const activeNames = activeStudents.map(student => student.name);
+    console.log("Active Students List:", activeNames);
+
+    // 3. Reduce to find the average math score of active students
+    const totalMathScore = activeStudents.reduce((accumulator, currentStudent) => {
+        return accumulator + Number(currentStudent.scores.math);
+    }, 0);
+    
+    console.log(`Average Math Score (Active Students): ${totalMathScore / activeStudents.length}`);
 
 })(); // End of IIFE
