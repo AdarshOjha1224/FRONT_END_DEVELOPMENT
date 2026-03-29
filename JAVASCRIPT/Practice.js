@@ -35,6 +35,52 @@
     let obj2 = obj1;
     obj2.val = 20; // obj1.val also becomes 20
 
-    
+    // ==========================================
+    // 08_Strings.js & 10_DataAndTime.js
+    // ==========================================
+    let currentDate = new Date();
+    // String interpolation and methods
+    let reportHeader = `--- ${schoolName.toUpperCase()} REPORT --- \nGenerated on: ${currentDate.toDateString()}\n`;
+    console.log(reportHeader);
+
+    // ==========================================
+    // 03_ConversionOperation.js & 04_stringToNumberConversion.js
+    // ==========================================
+    let rawInput = "85.5";
+    let numConversion1 = Number(rawInput);
+    let numConversion2 = parseInt(rawInput);
+    let numConversion3 = +rawInput; // Unary plus operator
+
+    // ==========================================
+    // 09_NumberAndMaths.js
+    // ==========================================
+    let roundedScore = Math.round(numConversion1); // 86
+    let randomBonus = Math.floor(Math.random() * 5) + 1; // Random number 1-5
+
+    // ==========================================
+    // 11_Array.js, 12_Objects.js, 13_Objects_2.js (Nested Objects)
+    // ==========================================
+    const studentsData = [
+        {
+            [uniqueId]: 1,
+            name: "Alice",
+            isActive: true, // Truthy
+            scores: { math: "95", science: 88, english: 92 } // Nested Object
+        },
+        {
+            [uniqueId]: 2,
+            name: "Bob",
+            isActive: "", // Falsy (empty string)
+            scores: { math: 45, science: 50, english: 40 }
+        },
+        {
+            [uniqueId]: 3,
+            name: "Charlie",
+            isActive: "Yes", // Truthy (non-empty string)
+            scores: { math: 75, science: 80, english: 78 }
+        }
+    ];
+
+   
 
 })(); // End of IIFE
