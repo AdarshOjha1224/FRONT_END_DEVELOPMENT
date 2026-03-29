@@ -81,6 +81,63 @@
         }
     ];
 
-   
+    // ==========================================
+    // 18_ScopeLevel&Hoisting.js
+    // ==========================================
+    // Hoisting: We can call this function before it's declared
+    hoistedWelcomeMessage(); 
+    
+    function hoistedWelcomeMessage() {
+        // Block Scope demonstration
+        if (true) {
+            let blockVar = "I stay in this block";
+            var functionVar = "I leak out of the if-block";
+        }
+        // console.log(blockVar); // This would throw a ReferenceError
+        // console.log(functionVar); // This works
+    }
+
+    // ==========================================
+    // 19_ThisAndArrowFunction.js
+    // ==========================================
+    const schoolSystem = {
+        name: "Tech Academy Backend",
+        printSystemName: function() {
+            // 'this' refers to schoolSystem object
+            console.log(`System: ${this.name}`);
+        },
+        // Arrow functions do NOT have their own 'this' context
+        getArrowStatus: () => console.log(`Status is active.`)
+    };
+    schoolSystem.printSystemName();
+    schoolSystem.getArrowStatus();
+
+    // ==========================================
+    // 22_Control_flow.js, 23_Switch.js, 24_truthy_and_falsy_Values.js
+    // ==========================================
+    function calculateGrade(score) {
+        // Truthy/Falsy check
+        if (!score && score !== 0) {
+            return "Invalid Score";
+        }
+
+        // Comparison (05_Comparision.js: <, >=, ===)
+        let category;
+        if (score >= 90) category = "A";
+        else if (score >= 70) category = "B";
+        else if (score >= 50) category = "C";
+        else category = "F";
+
+        // Switch Statement
+        switch(category) {
+            case "A": return "Excellent";
+            case "B": return "Good";
+            case "C": return "Average";
+            case "F": return "Fail";
+            default: return "Unknown";
+        }
+    }
+
+    
 
 })(); // End of IIFE
