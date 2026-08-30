@@ -5,6 +5,7 @@ function display() {
 display // function reference 
 display() // function execute
 
+
 function addTwoNumbers(num1, num2) { // passing input while creating function is parameters
     console.log(num1 + num2) 
 }
@@ -12,6 +13,7 @@ function addTwoNumbers(num1, num2) { // passing input while creating function is
 function product(num1, num2) {
     return num1 * num2 
 }
+
 
 addTwoNumbers(56, 34) // 90    // passing input while calling function is arguments.
 addTwoNumbers(34, "23") // 3423
@@ -25,7 +27,6 @@ console.log("Result : ", result)
 const result2 = product(23, 45)
 console.log("Product : ", result2) 
 
-
 function loginMessage(userName = "Unknown Person") {
     // undefined = false value , "" = false value
     if (!userName) {          // if (userName === undefined) 
@@ -37,5 +38,3 @@ function loginMessage(userName = "Unknown Person") {
 
 console.log(loginMessage("Adarsh")) // If value is passed then it will override the function's default value.
 console.log(loginMessage()) // No value is passed.
-
-
