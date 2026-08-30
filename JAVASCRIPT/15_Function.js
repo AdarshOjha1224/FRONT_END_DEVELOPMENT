@@ -21,8 +21,10 @@ addTwoNumbers("23", 77) // 2377
 const result = addTwoNumbers(4, 26)
 console.log("Result : ", result)
 
+
 const result2 = product(23, 45)
 console.log("Product : ", result2) 
+
 
 function loginMessage(userName = "Unknown Person") {
     // undefined = false value , "" = false value
