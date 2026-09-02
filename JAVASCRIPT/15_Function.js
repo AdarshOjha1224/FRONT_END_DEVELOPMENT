@@ -6,6 +6,12 @@ display // function reference
 display() // function execute
 
 
+
+
+
+
+
+
 function addTwoNumbers(num1, num2) { // passing input while creating function is parameters
     console.log(num1 + num2) 
 }
@@ -13,6 +19,12 @@ function addTwoNumbers(num1, num2) { // passing input while creating function is
 function product(num1, num2) {
     return num1 * num2 
 }
+
+
+
+
+
+
 
 
 addTwoNumbers(56, 34) // 90    // passing input while calling function is arguments.
