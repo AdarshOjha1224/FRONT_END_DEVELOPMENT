@@ -1,8 +1,6 @@
 // switch (key) {
 //     case value:
-        
 //         break;
-
 //     default:
 //         break;
 // }
@@ -34,5 +32,5 @@ switch (month) {
     default:
         console.log("Unvalid Input");
         break;
-        
+
 }
