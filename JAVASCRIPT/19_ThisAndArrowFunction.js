@@ -31,6 +31,7 @@ const user = {
 }
 
 
+
 user.welcomeMessage()
 user.username = "Ojha"
 user.welcomeMessage()
@@ -38,12 +39,14 @@ user.welcomeMessage()
 console.log(this) // {} empty object , there is no global context
 // In Browser - Global Object is window object
 
+
 function first1() {
     let username = "Adarsh"
     console.log(this)
     console.log(this.username) // this in not working in Outer function , working in object function.
 }
 first1()
+
 
 const first2 = function () {      // Still not working this way..
     let username = "Adarsh"
@@ -124,8 +127,4 @@ const user3 = {
 
 user3.greet(); 
 // Output: "Hi, undefined"
-
-
-
-
 
