@@ -11,7 +11,11 @@
 
 const month = 3
 
+
+
+
 switch (month) {
+
     case 1:
         console.log("January");
         break;
@@ -30,4 +34,5 @@ switch (month) {
     default:
         console.log("Unvalid Input");
         break;
+        
 }
