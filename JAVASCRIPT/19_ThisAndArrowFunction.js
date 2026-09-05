@@ -1,4 +1,3 @@
-
 // BASIC ARROW FUNCTION
 
 // const addTwo = (num1, num2) => {
@@ -9,12 +8,12 @@
 // use return keywork because of {} , and if we have single line return statement then it can be written like --
 // const addTwo = (num1, num2) => num1 + num2
 
+
 const addTwo = (num1,num2) => (num1 + num2)
 console.log(addTwo(13, 17))
 
 const name = () => ({ username: "Adarsh" }) // parenthises creates a block.
 console.log(name())
-
 
 // =================================================================
 
@@ -29,8 +28,6 @@ const user = {
         console.log(this)
     }
 }
-
-
 
 user.welcomeMessage()
 user.username = "Ojha"
