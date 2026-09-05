@@ -3,7 +3,6 @@ const myArr = [1, 2, true, "Adarsh", null, undefined]
 console.log(myArr)
 const nums = [0, 1, 2, 3, 4, 5, 6]
 
-
 const arrr = new Array(0,2,4,6,8,10,12,14,16,18) // Decleration of Array 
 
 // Arrays are resizable and can contain differnt type of datatypes.
@@ -37,6 +36,7 @@ console.log(myArr)
 
 
 
+
 // ==========================================
 // INITIAL SETUP
 // ==========================================
@@ -46,6 +46,7 @@ console.log(myArr)
 // // 1. Basic Properties
 // console.log("length:", arr.length); // 5
 // console.log("constructor:", arr.constructor === Array); // true
+
 
 // // ==========================================
 // // SEARCHING & ACCESSING (Non-mutating)
@@ -59,6 +60,7 @@ console.log(myArr)
 // console.log("findIndex (> 25):", arr.findIndex(x => x > 25)); // 2
 // console.log("findLast (> 25):", arr.findLast(x => x > 25)); // 50
 // console.log("findLastIndex (> 25):", arr.findLastIndex(x => x > 25)); // 4
+
 
 // // ==========================================
 // // ITERATION & TRANSFORMATION (Non-mutating)
@@ -76,6 +78,7 @@ console.log(myArr)
 // arr.forEach(x => process.stdout?.write(x + " ")); // 10 20 30 40 50
 // console.log();
 
+
 // // ==========================================
 // // CREATING NEW ARRAYS (Non-mutating)
 // // ==========================================
@@ -91,6 +94,7 @@ console.log(myArr)
 // console.log("toSpliced(1, 2):", arr.toSpliced(1, 2, 99)); // [10, 99, 40, 50]
 // console.log("with(2, 999):", arr.with(2, 999)); // [10, 20, 999, 40, 50]
 
+
 // // ==========================================
 // // ITERATORS & SYMBOLS
 // // ==========================================
@@ -101,6 +105,7 @@ console.log(myArr)
 // console.log("Symbol.iterator:", [...arr[Symbol.iterator]()]); // Same as values()
 // console.log("Symbol.unscopables:", arr[Symbol.unscopables]); // { copyWithin: true, entries: true, fill: true, ... }
 
+
 // // ==========================================
 // // STRING FORMATTING
 // // ==========================================
@@ -108,6 +113,7 @@ console.log(myArr)
 // console.log("join('-'):", arr.join('-')); // "10-20-30-40-50"
 // console.log("toString:", arr.toString()); // "10,20,30,40,50"
 // console.log("toLocaleString:", [1000.5, 2000].toLocaleString('en-US')); // "1,000.5,2,000"
+
 
 // // ==========================================
 // // MUTATING METHODS (Changes the original array)
@@ -183,6 +189,8 @@ console.log(all_new_heros)
 const another_array = [0, 1, 3, [4, 5, 6], 7,[8, 9,[10, 11, 12], [13, 14]], 15]
 const real_another_array = another_array.flat(Infinity)
 console.log(real_another_array);
+
+
 
 
 // DATA SCRAPING
